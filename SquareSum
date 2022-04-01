@@ -20,3 +20,13 @@
 //R  a sum of all positvie
 //e
 //p
+function sum(arr){
+   let newArr = Number(arr.filter(num=>num > 0))
+   return newArr.reduce((acc,c)=>acc+c)
+}
+console.log(sum([1,2,-3,4]),7)
+console.log(sum([-1,-2,-5,3]),3)
+console.log(sum([9,90,900,-1]),7)
+console.log(sum([1,2,-3,4]),7)
+console.log(sum([-1,-2,-5,3]),3)
+console.log(sum([9,90,900,-1]),7)
